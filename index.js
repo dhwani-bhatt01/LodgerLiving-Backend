@@ -2,10 +2,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
-import { authRouter } from "./routes/auth.controller.js";
-import { notificationRouter } from "./routes/notification.controller.js";
-import { postRouter } from "./routes/post.controller.js";
-import { profileRouter } from "./routes/profile.controller.js";
+import { authRouter } from "./src/routes/auth.controller.js";
+import { notificationRouter } from "./src/routes/notification.controller.js";
+import { postRouter } from "./src/routes/post.controller.js";
+import { profileRouter } from "./src/routes/profile.controller.js";
 import { verifyAuthToken } from "./utils/verifyToken.js";
 const app = express(); //created an instance of express
 
